@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img class="croix" src="img/close-x.png" alt="croix back">
+    <img class="couv" src="img/image 7.png" alt="couverture du livre">
+  </header>
+
+  <div class="titre">
+    <h1>SACCAGE</h1>
+    <div class="star">
+      <h5>4,5</h5>
+      <img src="img/ic_baseline-star.png" alt="étoile">
+    </div>
+  </div>
+
+  <h2>Frederick Peeters</h2>
+  <h3>ROMAN GRAPHIQUE</h3>
+
+  <div class="fonctions">
+    <img src="img/Group 47.png" alt="ajouter a la catégorie">
+    <img src="img/Group 40.png" alt="liker">
+    <img src="img/Group 68.png" alt="noter">
+  </div>
+
+
+  <h4>Fable d’anticipation, allégorie <br>hallucinée, <strong>Saccage</strong> se lit comme un poème graphique en forme
+    de
+    constat pour le
+    moins amer, et présente un<br> monde en pleine déliquescence, sidérant comme un massacre, effrayant comme un
+    cauchemar – mais <strong>Saccage</strong> est bien plus qu’un délire visuel, c’est une véritable œuvre
+    coup-de-poing... <div class="voirplus">voir
+      plus...</div>
+  </h4>
+
+
+  <div class="commentaires">
+    <h5>Laisser un commentaire...</h5>
+    <img src="img/Group 67.png" alt="ajouter un commentaire">
+  </div>
+
+
+  <footer>
+    <img src="img/Vector-1.png" alt="home">
+    <img src="img/Vector-2.png" alt="loupe">
+    <img src="img/Vector-3.png" alt="profil">
+    <img src="img/Vector.png" alt="livre">
+  </footer>
+
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+</body>
+
+</html>
+<!-- 🦊 Votre page ici -->
+
+<!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
+<!-- 
         <select class="star-rating" aria-label="Note utilisateur">
             <option value="">Select a rating</option>
             <option value="5">Excellent</option>
@@ -21,12 +82,4 @@
             <option value="1">Terrible</option>
         </select>
     -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
-</html>
+<!-- 💡 Script pour gérer le rating d'un livre -->
